@@ -23,7 +23,7 @@ Desenvolvido utilizando as seguintes tecnologias
    LINK: www.mongodb.com
   
   # Adicionar banco no projeto
-   Add o connect em /database/connect.js
+   Add o connect em src/database/connect.js
   
    # Iniciar o projeto
    node index.js
