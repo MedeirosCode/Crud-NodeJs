@@ -49,11 +49,11 @@ app.patch("/users/:id", async (req, res) => {
 // deletar usuário
 app.delete("/users/:id", async (req, res) => {
   try {
-    const id = req.body.id;
+    const id = req.params.id;
     const user = await UserModel.findByIdAndDelete(id);
-    res.status(200).json(user);
+     res.status(200).json(user);
   } catch (error) {
-    res.status(500).send(error.message);
+     res.status(500).send(error.message);
   }
 });
 
